@@ -1,0 +1,360 @@
+:root {
+	--modal-duration: 1s;
+	--modal-color: #428bca;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+/*Ocean green text */
+mark.green {
+	color: rgb(6, 162, 173);
+	background: none;
+}
+/*Header Styling--along with Menu*/
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+}
+h1 {
+	display: flex;
+	font-weight: bold;
+	width: fit-content;
+	margin: 10px;
+}
+ul li {
+	display: inline-block;
+}
+
+ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 5px 10px;
+}
+
+ul li a:hover {
+	background-color: rgb(6, 162, 173);
+	color: azure;
+	border-radius: 6em;
+}
+
+/*Styling Main Content*/
+.intro {
+	display: flex;
+	align-content: center;
+}
+.intro-div {
+	margin: 20px;
+	text-align: left;
+	font-size: large;
+	width: 50%;
+	font-weight: bold;
+	align-items: center;
+}
+/*Button -Black */
+.black-button {
+	display: flex;
+	justify-content: center;
+	margin: 50px;
+}
+.btn {
+	font-size: 17px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1em 2.5em;
+	display: inline-block;
+	border-radius: 6em;
+	border: none;
+	font-family: inherit;
+	font-weight: 500;
+	color: white;
+	background-color: black;
+	cursor: pointer;
+}
+.btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/*Modal */
+.modal-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(212, 205, 205, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+}
+.modal-bg-visible {
+	visibility: visible;
+}
+
+.modal {
+	position: relative;
+	background-color: white;
+	height: 70%;
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+input {
+	border-top-style: hidden;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	border-bottom-style: solid;
+	border-color: rgb(6, 162, 173);
+	background-color: white;
+	margin-right: 50px;
+	margin-top: 30px;
+	border-image: none;
+}
+
+.no-outline:focus {
+	outline: none;
+}
+.modal-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+/*
+.overlay {
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay.overlay--hidden
+{
+	display:none;
+}
+.modal {
+	position: fixed;
+	top: 0;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	transition: all .3s ease;
+
+	
+	 
+
+  }
+  .modal.modal--hidden{
+	  display:none;
+  }
+  #submit{
+	width: 100%;
+	padding: .5rem;
+	background-color:rgb(6, 162, 173);
+	color: #fff;
+	border: none;
+	transition: all .3s ease;
+
+}
+#submit:hover {
+	background-color:rgb(221, 113, 62);
+  }
+  .modal.__close-bar {
+	cursor: pointer;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: -2rem;
+	margin-top: -1rem;
+  }
+  .modal.__contents {
+	background-color: #fff;
+	padding: 2rem 4rem;
+	
+	}*/
+
+/*CSS ocean green shape decorators*/
+.intro-div-decorate {
+	display: flex;
+	align-content: center;
+	height: 300px;
+	width: 300px;
+	margin: 50px;
+	margin-left: 100px;
+}
+
+.arrow-triangle {
+	position: relative;
+	background-color: rgb(6, 162, 173);
+	text-align: left;
+	margin: 1.2em;
+}
+
+.arrow-triangle:before,
+.arrow-triangle:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+
+.arrow-triangle,
+.arrow-triangle:before,
+.arrow-triangle:after {
+	width: 120px;
+	height: 120px;
+	border-top-right-radius: 30%;
+}
+
+.arrow-triangle.left {
+	transform: rotate(-90deg) skewX(-30deg) scale(1, .866);
+}
+
+.arrow-triangle.right {
+	transform: rotate(-30deg) skewX(-30deg) scale(1, .866);
+}
+
+.arrow-triangle:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+}
+
+.arrow-triangle:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+}
+
+.circle-big {
+	height: 40px;
+	width: 43px;
+	margin-top: 190px;
+	background-color: rgb(6, 162, 173);
+	border-radius: 50%;
+}
+
+.circle-small {
+	height: 15px;
+	width: 15px;
+	margin-top: 180px;
+	margin-left: 30px;
+	background-color: rgb(6, 162, 173);
+	border-radius: 50%;
+}
+/*Fuel-and energy---creative workspace styling*/
+.fuel-and-energy {
+	background-color: rgb(43, 163, 39);
+	width: 100%;
+	height: 1000px;
+}
+/*Connectivity---creative workspace styling*/
+.connectivity {
+	background-color: rgb(118, 79, 228);
+	width: 100%;
+	height: 1200px;
+}
+
+.connect-heading {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	font-size: 50px;
+	font-weight: bolder;
+	color: white;
+	background-color: rgb(118, 79, 228);
+}
+
+/*Parallax effect*/
+.parallax {
+	background-image: url("https://images.pexels.com/photos/7281412/pexels-photo-7281412.jpeg?cs=srgb&dl=pexels-alihan-g%C3%BClya%C4%9Fc%C4%B1-7281412.jpg&fm=jpg");
+
+	/* Set a specific height */
+	min-height: 500px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*Information card---styling*/
+
+.container {
+	position: relative;
+	width: 1100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+
+.container .card {
+	position: relative;
+	max-width: 300px;
+	height: 215px;
+	background-color: #fff;
+	margin: 30px 10px;
+	padding: 20px 15px;
+
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+	transition: 0.3s ease-in-out;
+	border-radius: 15px;
+}
+.container .card:hover {
+	height: 320px;
+}
+
+.container .card .image {
+	position: relative;
+	width: 200px;
+	height: 200px;
+
+	top: -40%;
+	left: 8px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.container .card .image img {
+	max-width: 100%;
+	border-radius: 15px;
+}
+
+.container .card .content {
+	position: relative;
+	top: -140px;
+	padding: 10px 15px;
+	color: #111;
+	text-align: center;
+
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+	margin-top: 30px;
+	visibility: visible;
+	opacity: 1;
+	transition-delay: 0.2s;
+}
+.info-cards {
+	margin-top: 120px;
+	display: flex;
+}
+
+/*Compliance---creative workspace styling*/
+.compliance {
+	background-color: rgb(59, 35, 124);
+	width: 100%;
+	height: 1000px;
+}
+/*Training---creative workspace styling*/
+.training {
+	background-color: rgb(221, 113, 62);
+	width: 100%;
+	height: 1000px;
+}

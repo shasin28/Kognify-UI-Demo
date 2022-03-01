@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial scale=1.0">
+    <title>Kognifai</title>
+    <link rel="stylesheet" href="css\style.css">
+
+</head>
+
+<body>
+
+    <!--Header Section-->
+    <header>
+        <div class="header-top">
+            <div class="header-heading">
+                <h1>Kognifai 2.0</h1>
+            </div>
+            <!--Menu items on top for navigation-->
+            <div class="menu">
+                <br>
+                <ul>
+                    <li><a href="#fuelenergy">FUEL AND ENERGY</a></li>
+                    <li><a href="#connect">CONNECTIVITY</a></li>
+                    <li><a href="#compli">COMPLIANCE</a></li>
+                    <li><a href="#train">TRAINING</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--main content begins-->
+
+    <!--Kognifai-information-->
+    <div class="intro">
+        <div class="intro-div">
+            <p>The one stop shop for ship owners and operators.
+                <mark class="green">Digitalize your vessel operation in cost-efficient and secure way.</mark>
+            </p>
+            <!--button for making modal appear-->
+            <div class="black-button">
+                <button class="btn" id="try-now-btn">Try Now</button>
+            </div>
+        </div>
+        <!--Triangle-circle- green decorations using css -->
+        <div class="intro-div-decorate">
+            <div class="arrow-triangle left">
+            </div>
+            <div class="circle-big">
+
+            </div>
+            <div class="circle-small"></div>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="intro-div">
+            <h1>Kognifai</h1>
+            <h1>Ecosystem</h1>
+            <p>
+                Digitilizing maritime applications requires not only powerful applications,but also a secure data
+                infrastructure providing
+                cost efficient access to reliable and high quality data.
+            </p>
+        </div>
+        <div class="intro-div-decorate">
+
+
+            <img src="images\microsite_banner_image.PNG" />
+        </div>
+    </div>
+
+    <!--Information Sections : directed from menu buttons-->
+    <!--Fuel-and-Energy-->
+    <section class="fuel-and-energy" id="fuelenergy">
+
+    </section>
+    <!--Connectivity--My Creative Workspace-->
+    <section class="connectivity" id="connect">
+        <div class="connect-heading">
+            Kongsberg:Who We Are
+        </div>
+        <!--parallax effect-->
+        <div class="parallax"></div>
+        <!--information cards-->
+        <div class="info-cards">
+            <!--Kongsberg Maritime Card-->
+            <div class=container>
+                <div class=card>
+                    <div class=image>
+                        <img href="#" src=images\image1.jpg>
+                    </div>
+                    <div class=content>
+                        <h3>Kongsberg Maritime</h3>
+                        Efficiency and safety throughout the whole maritime technology spectrum.
+                    </div>
+                </div>
+
+            </div>
+            <!--Kongsberg digital Card-->
+            <div class=container>
+                <div class=card>
+                    <div class=image>
+                        <img href="#" src=images\image3.jpg>
+                    </div>
+                    <div class=content>
+                        <h3>Kongsberg Digital</h3>
+                        <p>Kongsberg Digital delivers software and solutions, that enable the world's industries to
+                            harness the
+                            power
+                            of digitalisation.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--Kongsberg Aerospace and defence-->
+            <div class=container>
+                <div class=card>
+                    <div class=image>
+                        <img href="#" src=images\image2.jpg>
+                    </div>
+                    <div class=content>
+                        <h3>Kongsberg defence and Aerospace</h3>
+                        <p>Two centuries of innovation, transformation and delivering results, has made Kongsberg
+                            Defence &
+                            Aerospace,
+                            a recognised global technology leader.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--Compliance-Workspace-->
+    <section class="compliance" id="compli">
+    </section>
+    <!--Training-Workspace-->
+    <section class="training" id="train">
+    </section>
+
+
+
+    <!--modal-section-->
+    <div class="modal-bg" id="s-form">
+        <!--Input form-->
+        <div class="modal">
+
+            <form>
+                <input id="num" placeholder="Number of Ships" type="number" required />
+                <div id="row">
+                    <input id="fname" placeholder="First Name" type="text" required />
+                    <input id="lname" placeholder="Last Name" type="text" required />
+                </div>
+                <div id="row">
+                    <input id="email" placeholder="Email" type="email" required />
+                    <input id="company" placeholder="Company" type="text" required />
+                </div>
+                <div class="black-button">
+                    <button class="btn" id="sub-btn">Submit</button>
+                </div>
+                <span class="modal-close" id="close-popup-form">X</span>
+
+            </form>
+
+        </div>
+    </div>
+    <div class="modal-bg" id="thankyou-form">
+        <div class="modal">
+            <div class="intro">
+                <div class="intro-div">
+                    <h1>Thank you!</h1>
+                    <p> <mark class="green">You will receive the instructions for demo account shortly in your
+                            email.</mark>
+                    </p>
+                </div>
+                <div class="intro-div-decorate">
+                    <div class="arrow-triangle left">
+                    </div>
+                    <div class="circle-big">
+                    </div>
+                    <div class="circle-small"></div>
+                </div>
+                <span class="modal-close" id="close-popup-thankyou">X</span>
+            </div>
+        </div>
+    </div>
+    <script src="js\index.js"></script>
+</body>
+
+</html>
